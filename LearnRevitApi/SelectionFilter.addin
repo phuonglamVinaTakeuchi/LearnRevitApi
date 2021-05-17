@@ -2,8 +2,8 @@
 <RevitAddIns>
     <AddIn Type="Application">
         <Name>Learn Selection Filter Application</Name>
-        <Assembly>"C:\ProgramData\Autodesk\Revit\Addins\2019\LearnSelectionFilterAddin\LearnSelectionFilter.dll"</Assembly>
-        <AddInId>C4FEAA61-3A23-4D6F-B0E2-056A0E9BE24C</AddInId>
+        <Assembly>LearnSelectionFilter.dll</Assembly>
+        <AddInId>B5B6E498-FDDC-4893-99B3-8C3C7CBA2EDB</AddInId>
         <FullClassName>LearnSelectionFilter.SelectionFilterRibbon</FullClassName>
         <VendorId>LearnSelectionFilter</VendorId>
         <VendorDescription>LearnSelectionFilter</VendorDescription>

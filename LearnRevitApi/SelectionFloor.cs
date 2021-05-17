@@ -33,7 +33,7 @@ namespace LearnSelectionFilter
             //    var element = doc.GetElement(elementid);
             //    TaskDialog.Show("Revit", element.Name);
             //}
-
+            /*
             try
             {
                 var refObject = uiDoc.Selection.PickObject(ObjectType.Element);
@@ -47,8 +47,9 @@ namespace LearnSelectionFilter
             {
                 message = e.Message;
                 return Result.Failed;
-            }
-            
+            }*/
+            TaskDialog.Show("Hello","Wecome to Revit Api");
+
 
             return Result.Succeeded;
         }
