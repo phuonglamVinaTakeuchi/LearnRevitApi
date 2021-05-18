@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-    <AddIn Type="Application">
+    <AddIn Type="Command">
         <Name>Learn Selection Filter Application</Name>
         <Assembly>LearnSelectionFilter.dll</Assembly>
         <AddInId>B5B6E498-FDDC-4893-99B3-8C3C7CBA2EDB</AddInId>
-        <FullClassName>LearnSelectionFilter.SelectionFilterRibbon</FullClassName>
+        <FullClassName>LearnSelectionFilter.SelectionFloor</FullClassName>
         <VendorId>LearnSelectionFilter</VendorId>
         <VendorDescription>LearnSelectionFilter</VendorDescription>
     </AddIn>

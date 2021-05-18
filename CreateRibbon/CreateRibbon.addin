@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>Learn Create Ribbon Application</Name>
+        <Assembly>LearnCreateRibbon.dll</Assembly>
+        <AddInId>E73AC2B1-634B-4A7F-9E2F-07F07DEE82F5</AddInId>
+        <FullClassName>LearnCreateRibbon.CreateRibbon</FullClassName>
+        <VendorId>LearnCreateRibbon</VendorId>
+        <VendorDescription>LearnCreateRibbon</VendorDescription>
+    </AddIn>
+</RevitAddIns>
