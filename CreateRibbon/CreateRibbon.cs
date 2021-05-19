@@ -16,20 +16,28 @@ namespace LearnCreateRibbon
         public Result OnStartup(UIControlledApplication application)
         {
             var ribbon = application.CreateRibbonPanel("Learn-Selection-Panel");
-            CreateRibbonButton(application,ribbon, "GetObjectInfo", "Get Selected Object Info!", @"\About.ico");
-            CreateRibbonButton(application, ribbon, "CountDoor", "Count all Door in Current Document!", @"\About.ico");
-            CreateRibbonButton(application, ribbon, "CountDoorSimilar", "Count Similar Selected Door in Current Document!", @"\About.ico");
-            CreateRibbonButton(application, ribbon, "CountSimilarObject", "Count Similar Selected Object in Current Document!", @"\About.ico");
-            CreateRibbonButton(application, ribbon, "CountWalls", "Count Walls Object in Current Document!", @"\About.ico");
+            //CreateRibbonButton(application,ribbon, "GetObjectInfo", "Get Selected Object Info!", @"\About.ico", "LearnSelectionFilter");
+            //CreateRibbonButton(application, ribbon, "CountDoor", "Count all Door in Current Document!", @"\About.ico", "LearnSelectionFilter");
+            //CreateRibbonButton(application, ribbon, "CountDoorSimilar", "Count Similar Selected Door in Current Document!", @"\About.ico", "LearnSelectionFilter");
+            //CreateRibbonButton(application, ribbon, "CountSimilarObject", "Count Similar Selected Object in Current Document!", @"\About.ico", "LearnSelectionFilter");
+            //CreateRibbonButton(application, ribbon, "CountWalls", "Count Walls Object in Current Document!", @"\About.ico", "LearnSelectionFilter");
+            //CreateRibbonButton(application, ribbon, "TransactionDemo", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, "EditParametersValue", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            CreateRibbonButton(application, ribbon, "AddInstanceFamily", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            CreateRibbonButton(application, ribbon, "GetParameterValue", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            CreateRibbonButton(application, ribbon, "SetWallThicknessSample", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, "EditTNFFootingParam", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            
+            
 
             return Result.Succeeded;
         }
-        private void CreateRibbonButton(UIControlledApplication application, RibbonPanel ribbon,string commandName,string decripptionTooltip,string iconStringPath)
+        private void CreateRibbonButton(UIControlledApplication application, RibbonPanel ribbon,string commandName,string decripptionTooltip,string iconStringPath,string nameSpace)
         {
             //var thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
             var folderPath = AssemblyDirection();
-            var assenblyPath = folderPath + @"\LearnSelectionFilter.dll";
-            PushButtonData buttonData = new PushButtonData("cmd"+commandName, commandName, assenblyPath, "LearnSelectionFilter."+commandName);
+            var assenblyPath = folderPath + @"\" + nameSpace+".dll";
+            PushButtonData buttonData = new PushButtonData("cmd"+commandName, commandName, assenblyPath, nameSpace + "."+commandName);
             var pustButton = ribbon.AddItem(buttonData) as PushButton;
             pustButton.ToolTip = decripptionTooltip;
             var iconImg = new Uri(folderPath + iconStringPath);

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnSelectionFilter", "Lea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnCreateRibbon", "CreateRibbon\LearnCreateRibbon.csproj", "{65FE0713-DB27-4502-A98C-B767834CAB9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnTransaction", "LearnTransaction\LearnTransaction.csproj", "{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{65FE0713-DB27-4502-A98C-B767834CAB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FE0713-DB27-4502-A98C-B767834CAB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65FE0713-DB27-4502-A98C-B767834CAB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

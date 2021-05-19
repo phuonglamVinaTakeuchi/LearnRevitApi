@@ -32,11 +32,10 @@ namespace LearnSelectionFilter
                 {
                     var elementId = refObject.ElementId;
                     var element = doc.GetElement(elementId);
-
                     var elementTypeId = element.GetTypeId();
-                    
                     var elementType = element.GetType();
                     var revitElementType = doc.GetElement(elementTypeId) as ElementType;
+                    //var revitType = revitElementType.GetType();
                     var familyTypeId = revitElementType.GetTypeId();
                     var categoryName = element.Category.Name;
                     if (revitElementType is FamilySymbol)
