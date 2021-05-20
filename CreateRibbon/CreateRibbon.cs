@@ -1,4 +1,5 @@
 ﻿using Autodesk.Revit.UI;
+using LearnTransaction;
 using System;
 using System.IO;
 using System.Reflection;
@@ -23,13 +24,16 @@ namespace LearnCreateRibbon
             //CreateRibbonButton(application, ribbon, "CountWalls", "Count Walls Object in Current Document!", @"\About.ico", "LearnSelectionFilter");
             //CreateRibbonButton(application, ribbon, "TransactionDemo", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, "EditParametersValue", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
-            CreateRibbonButton(application, ribbon, "AddInstanceFamily", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
-            CreateRibbonButton(application, ribbon, "GetParameterValue", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
-            CreateRibbonButton(application, ribbon, "SetWallThicknessSample", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, "AddInstanceFamily", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, "GetParameterValue", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, "SetWallThicknessSample", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, "EditTNFFootingParam", "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CreateWall), "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CreateFloor), "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(MoveByLocation), "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(MoveByMoveFunction), "Demo Move Object By Element Move Funcion!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(RotateByFuntion), "Demo Move Object By Element Move Funcion!", @"\About.ico", "LearnTransaction");
             
-            
-
             return Result.Succeeded;
         }
         private void CreateRibbonButton(UIControlledApplication application, RibbonPanel ribbon,string commandName,string decripptionTooltip,string iconStringPath,string nameSpace)

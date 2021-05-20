@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8AC45F64-F5A0-44CC-809E-F5533C7FD3A5}</ProjectGuid>
+    <ProjectGuid>{13A33478-36E3-47D3-B093-5A7F03A78F54}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LearnTransaction</RootNamespace>
-    <AssemblyName>LearnTransaction</AssemblyName>
+    <RootNamespace>TakeuchiUtils</RootNamespace>
+    <AssemblyName>TakeuchiUtils</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -47,25 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddInstanceFamily.cs" />
-    <Compile Include="CreateFloor.cs" />
-    <Compile Include="CreateRebar.cs" />
-    <Compile Include="CreateWall.cs" />
-    <Compile Include="EditParametersValue.cs" />
-    <Compile Include="EditTNFFootingParam.cs" />
-    <Compile Include="GetParameterValue.cs" />
-    <Compile Include="MoveByLocation.cs" />
-    <Compile Include="MoveByMoveFunction.cs" />
-    <Compile Include="RotateByFuntion.cs" />
-    <Compile Include="SetWallThicknessSample.cs" />
-    <Compile Include="TransactionDemo.cs" />
+    <Compile Include="PointUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TakeuchiUtils\TakeuchiUtils.csproj">
-      <Project>{13a33478-36e3-47d3-b093-5a7f03a78f54}</Project>
-      <Name>TakeuchiUtils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
