@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LearnTransaction
+namespace LearnSelectionFilter
 {
     [TransactionAttribute(TransactionMode.Manual)]
-    class CreateRebar : IExternalCommand
+    public class CreateAModelCurve : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
@@ -20,24 +20,14 @@ namespace LearnTransaction
             var doc = uiDoc.Document;
             try
             {
-               
-                using (var transaction = new Transaction(doc, "Create Rebar Demo"))
-                {
-                    transaction.Start();
-
-                    transaction.Commit();
-                }
-
-
+                return Result.Succeeded;
             }
             catch (Exception e)
             {
                 message = e.Message;
-
                 return Result.Failed;
-
             }
-            return Result.Succeeded;
+ 
         }
     }
 }

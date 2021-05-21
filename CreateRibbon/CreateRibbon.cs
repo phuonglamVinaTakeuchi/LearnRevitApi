@@ -1,4 +1,5 @@
 ﻿using Autodesk.Revit.UI;
+using LearnSelectionFilter;
 using LearnTransaction;
 using System;
 using System.IO;
@@ -33,6 +34,12 @@ namespace LearnCreateRibbon
             //CreateRibbonButton(application, ribbon, nameof(MoveByLocation), "Demo Using Transaction!", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, nameof(MoveByMoveFunction), "Demo Move Object By Element Move Funcion!", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, nameof(RotateByFuntion), "Demo Move Object By Element Move Funcion!", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CreateFamilyInstance), "Demo add new Family instance to !", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(GetObjectIntersect), "Demo add new Family instance to !", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(GetIntersectPointOfElement), "Demo add new Family instance to !", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CountDoorAndWindowInAWall), "Demo add new Family instance to !", @"\About.ico", "LearnSelectionFilter");
+            
+            
             
             return Result.Succeeded;
         }

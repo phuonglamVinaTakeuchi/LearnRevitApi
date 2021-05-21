@@ -53,9 +53,11 @@
   <ItemGroup>
     <None Include="SelectionFilter.addin" />
     <Compile Include="CountDoor.cs" />
+    <Compile Include="CountDoorAndWindowInAWall.cs" />
     <Compile Include="CountDoorSimilar.cs" />
     <Compile Include="CountSimilarObject.cs" />
     <Compile Include="CountWalls.cs" />
+    <Compile Include="CreateAModelCurve.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetObjectInfo.cs" />
   </ItemGroup>

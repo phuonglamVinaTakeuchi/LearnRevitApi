@@ -48,11 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddInstanceFamily.cs" />
+    <Compile Include="CreateFamilyInstance.cs" />
     <Compile Include="CreateFloor.cs" />
     <Compile Include="CreateRebar.cs" />
     <Compile Include="CreateWall.cs" />
     <Compile Include="EditParametersValue.cs" />
     <Compile Include="EditTNFFootingParam.cs" />
+    <Compile Include="GetIntersectPointOfElement.cs" />
+    <Compile Include="GetObjectIntersect.cs" />
     <Compile Include="GetParameterValue.cs" />
     <Compile Include="MoveByLocation.cs" />
     <Compile Include="MoveByMoveFunction.cs" />
