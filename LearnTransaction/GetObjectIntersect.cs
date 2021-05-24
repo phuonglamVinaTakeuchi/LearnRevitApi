@@ -37,18 +37,30 @@ namespace LearnTransaction
                 
                 // Lấy ra các đối tượng Solid trong element
                 GetElementGeometry(element,option,out var curvers,out var solids);
+                ICollection<ElementId> idsExclude = new List<ElementId>();
+                idsExclude.Add(element.Id);
                 var collector = new FilteredElementCollector(doc);
+                var listFilter = new List<ElementFilter>();
+                foreach(var solid in solids)
+                {
+                    var intersectFilter = new ElementIntersectsSolidFilter(solid);
+                    listFilter.Add(intersectFilter);
+
+                }
+                var logicFilter = new LogicalOrFilter(listFilter);
                                 
-                var intersectFilter = new ElementIntersectsSolidFilter(solids[1]);
+                
 
-                var faces = solids[0].Faces.Cast<Face>().ToList();
-                var edge = solids[0].Edges.Cast<Edge>().ToList();
-                var points = edge[0].Tessellate();
-                var faceArea = faces[0].Area;
+                //var faces = solids[0].Faces.Cast<Face>().ToList();
+                //var edge = solids[0].Edges.Cast<Edge>().ToList();
+                //var points = edge[0].Tessellate();
+                //var faceArea = faces[0].Area;
 
 
-                var intersections = collector.OfClass(typeof(FamilyInstance))
-                                    .WherePasses(intersectFilter)
+                var intersections = collector
+                                    .Excluding(idsExclude)
+                                    //.OfClass(typeof(FamilyInstance))
+                                    .WherePasses(logicFilter)
                                     .ToElementIds();
                 uiDoc.Selection.SetElementIds(intersections);
 
@@ -92,8 +104,8 @@ namespace LearnTransaction
                 var geomInst = geomObj as GeometryInstance;
                 if (null != geomInst)
                 {
-                    GeometryElement transformedGeomElem
-                      = geomInst.GetInstanceGeometry(geomInst.Transform);
+                    //GeometryElement transformedGeomElem = geomInst.GetInstanceGeometry(geomInst.Transform);
+                    GeometryElement transformedGeomElem = geomInst.GetInstanceGeometry();
                     AddElementGeometry(transformedGeomElem, ref curves, ref solids);
                 }
             }

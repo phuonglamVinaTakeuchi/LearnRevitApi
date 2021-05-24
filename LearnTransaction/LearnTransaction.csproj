@@ -54,6 +54,7 @@
     <Compile Include="CreateWall.cs" />
     <Compile Include="EditParametersValue.cs" />
     <Compile Include="EditTNFFootingParam.cs" />
+    <Compile Include="GetElementIntersect.cs" />
     <Compile Include="GetIntersectPointOfElement.cs" />
     <Compile Include="GetObjectIntersect.cs" />
     <Compile Include="GetParameterValue.cs" />
@@ -65,6 +66,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LearnAPIBase\LearnAPIBase.csproj">
+      <Project>{9cdcf2e9-139c-433c-b431-083a00f4ccc1}</Project>
+      <Name>LearnAPIBase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TakeuchiUtils\TakeuchiUtils.csproj">
       <Project>{13a33478-36e3-47d3-b093-5a7f03a78f54}</Project>
       <Name>TakeuchiUtils</Name>

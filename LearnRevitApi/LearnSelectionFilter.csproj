@@ -61,7 +61,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetObjectInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LearnAPIBase\LearnAPIBase.csproj">
+      <Project>{9cdcf2e9-139c-433c-b431-083a00f4ccc1}</Project>
+      <Name>LearnAPIBase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetDir)"."" "$(AppData)\Autodesk\Revit\Addins\2019\"</PostBuildEvent>

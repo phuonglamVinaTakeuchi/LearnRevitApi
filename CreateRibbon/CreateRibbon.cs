@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Windows.Media.Imaging;
+using WorkingWithView;
 
 namespace LearnCreateRibbon
 {
@@ -38,7 +39,12 @@ namespace LearnCreateRibbon
             //CreateRibbonButton(application, ribbon, nameof(GetObjectIntersect), "Demo add new Family instance to !", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, nameof(GetIntersectPointOfElement), "Demo add new Family instance to !", @"\About.ico", "LearnTransaction");
             //CreateRibbonButton(application, ribbon, nameof(CountDoorAndWindowInAWall), "Demo add new Family instance to !", @"\About.ico", "LearnSelectionFilter");
-            
+            //CreateRibbonButton(application, ribbon, nameof(GetElementIntersect), "Demo Get Intersect !", @"\About.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CreateViewPlan), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
+            //CreateRibbonButton(application, ribbon, nameof(CreateFilterView), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
+            //CreateRibbonButton(application, ribbon, nameof(AutoCreateDoorAndWindowTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
+            //CreateRibbonButton(application, ribbon, nameof(AutoCreateWallTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
+            CreateRibbonButton(application, ribbon, nameof(CreateSheets), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
             
             
             return Result.Succeeded;

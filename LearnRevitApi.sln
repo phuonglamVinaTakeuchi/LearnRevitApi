@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnTransaction", "LearnTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeuchiUtils", "TakeuchiUtils\TakeuchiUtils.csproj", "{13A33478-36E3-47D3-B093-5A7F03A78F54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAPIBase", "LearnAPIBase\LearnAPIBase.csproj", "{9CDCF2E9-139C-433C-B431-083A00F4CCC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithView", "WorkingWithView\WorkingWithView.csproj", "{CD467A8F-29B7-47DA-BAD6-59EC5E155862}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{13A33478-36E3-47D3-B093-5A7F03A78F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13A33478-36E3-47D3-B093-5A7F03A78F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13A33478-36E3-47D3-B093-5A7F03A78F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDCF2E9-139C-433C-B431-083A00F4CCC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDCF2E9-139C-433C-B431-083A00F4CCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDCF2E9-139C-433C-B431-083A00F4CCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDCF2E9-139C-433C-B431-083A00F4CCC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD467A8F-29B7-47DA-BAD6-59EC5E155862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD467A8F-29B7-47DA-BAD6-59EC5E155862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD467A8F-29B7-47DA-BAD6-59EC5E155862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD467A8F-29B7-47DA-BAD6-59EC5E155862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
