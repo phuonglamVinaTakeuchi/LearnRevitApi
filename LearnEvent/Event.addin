@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="DBApplication">
+        <Name>Learn Event in Revit</Name>
+        <Assembly>LearnEvent.dll</Assembly>
+        <AddInId>1794F05C-65A0-444C-839D-B4B4E0A3B5F9</AddInId>
+        <FullClassName>LearnEvent.DemoEvent</FullClassName>
+        <VendorId>Learn event</VendorId>
+        <VendorDescription>Learn event Add on</VendorDescription>
+    </AddIn>
+</RevitAddIns>

@@ -18,7 +18,8 @@ namespace LearnCreateRibbon
 
         public Result OnStartup(UIControlledApplication application)
         {
-            var ribbon = application.CreateRibbonPanel("Learn-Selection-Panel");
+            application.CreateRibbonTab("Vina Takeuchi Tab");
+            var ribbon = application.CreateRibbonPanel("Vina Takeuchi Tab","Learn-Selection-Panel");
             //CreateRibbonButton(application,ribbon, "GetObjectInfo", "Get Selected Object Info!", @"\About.ico", "LearnSelectionFilter");
             //CreateRibbonButton(application, ribbon, "CountDoor", "Count all Door in Current Document!", @"\About.ico", "LearnSelectionFilter");
             //CreateRibbonButton(application, ribbon, "CountDoorSimilar", "Count Similar Selected Door in Current Document!", @"\About.ico", "LearnSelectionFilter");
@@ -44,8 +45,8 @@ namespace LearnCreateRibbon
             //CreateRibbonButton(application, ribbon, nameof(CreateFilterView), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
             //CreateRibbonButton(application, ribbon, nameof(AutoCreateDoorAndWindowTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
             //CreateRibbonButton(application, ribbon, nameof(AutoCreateWallTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
-            CreateRibbonButton(application, ribbon, nameof(CreateSheets), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
-            
+            //CreateRibbonButton(application, ribbon, nameof(CreateSheets), "Demo Get Intersect !", @"\AddSheet.ico", "WorkingWithView");
+            CreateRibbonButton(application, ribbon, nameof(CreateRebar), "Demo Create Rebar !", @"\AddSheet.ico", "LearnTransaction");
             
             return Result.Succeeded;
         }
