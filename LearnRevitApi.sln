@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithView", "WorkingW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnEvent", "LearnEvent\LearnEvent.csproj", "{D7842F63-6B39-496B-900C-9A3C0B9BF352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitWPF", "Revit-WPF\RevitWPF.csproj", "{4065B2C4-C251-4F7F-BB38-9D268095E42F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D7842F63-6B39-496B-900C-9A3C0B9BF352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7842F63-6B39-496B-900C-9A3C0B9BF352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7842F63-6B39-496B-900C-9A3C0B9BF352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4065B2C4-C251-4F7F-BB38-9D268095E42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4065B2C4-C251-4F7F-BB38-9D268095E42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4065B2C4-C251-4F7F-BB38-9D268095E42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4065B2C4-C251-4F7F-BB38-9D268095E42F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -61,18 +61,6 @@
       <Project>{9cdcf2e9-139c-433c-b431-083a00f4ccc1}</Project>
       <Name>LearnAPIBase</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LearnRevitApi\LearnSelectionFilter.csproj">
-      <Project>{02b64eb5-6dc7-46ad-824b-e714a9cc60e0}</Project>
-      <Name>LearnSelectionFilter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearnTransaction\LearnTransaction.csproj">
-      <Project>{8ac45f64-f5a0-44cc-809e-f5533c7fd3a5}</Project>
-      <Name>LearnTransaction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WorkingWithView\WorkingWithView.csproj">
-      <Project>{cd467a8f-29b7-47da-bad6-59ec5e155862}</Project>
-      <Name>WorkingWithView</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon\AddSheet.ico">

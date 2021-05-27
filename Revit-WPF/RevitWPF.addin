@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>Learn Create Ribbon Application</Name>
+        <Assembly>RevitWPF.dll</Assembly>
+        <AddInId>E126A81A-6850-4C18-9A87-273635316478</AddInId>
+        <FullClassName>RevitWPF.WPFApp</FullClassName>
+        <VendorId>Revit WPF MVVM</VendorId>
+        <VendorDescription>Revit WPF MVVM</VendorDescription>
+    </AddIn>
+</RevitAddIns>

@@ -1,11 +1,8 @@
 ﻿using Autodesk.Revit.UI;
-using LearnSelectionFilter;
-using LearnTransaction;
 using System;
 using System.IO;
 using System.Reflection;
 using System.Windows.Media.Imaging;
-using WorkingWithView;
 
 namespace LearnCreateRibbon
 {
@@ -46,7 +43,7 @@ namespace LearnCreateRibbon
             //CreateRibbonButton(application, ribbon, nameof(AutoCreateDoorAndWindowTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
             //CreateRibbonButton(application, ribbon, nameof(AutoCreateWallTag), "Demo Get Intersect !", @"\About.ico", "WorkingWithView");
             //CreateRibbonButton(application, ribbon, nameof(CreateSheets), "Demo Get Intersect !", @"\AddSheet.ico", "WorkingWithView");
-            CreateRibbonButton(application, ribbon, nameof(CreateRebar), "Demo Create Rebar !", @"\AddSheet.ico", "LearnTransaction");
+            //CreateRibbonButton(application, ribbon, nameof(CreateRebar), "Demo Create Rebar !", @"\AddSheet.ico", "LearnTransaction");
             
             return Result.Succeeded;
         }
